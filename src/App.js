@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import Headder from "./components/Headder";
+import Lodder from "./components/Lodder";
+import Rarity from "./components/Rarity";
+import Backtop from "./components/Backtop";
+import Tokemonics from "./components/Tokemonics";
+import Futter from "./components/Futter";
+import Roadmap from "./components/Roadmap";
+import FAQ from "./components/FAQ";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Lodder />
+      <Backtop />
+      <Headder />
+      <Tokemonics />
+      <Rarity />
+      <Roadmap />
+      <FAQ />
+      <Futter />
+    </>
   );
 }
 
